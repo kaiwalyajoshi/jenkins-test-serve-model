@@ -5,7 +5,7 @@ def gitCommit() {
         return gitCommit
     }
 
-    node {
+    node('linux') {
         // Checkout source code from Git
         stage 'Checkout'
         checkout scm
